@@ -38,3 +38,20 @@ Features: <br>
 - Circular avatar <br>
 - Social links with hover effects <br>
 - Clean and minimal design
+
+### Task 2: JavaScript, Data Transformation
+Go to directory <br>
+`cd task-2-javaScript-data-transformation` <br>
+
+Run all tests: <br>
+`node transforms.js --test` <br>
+
+Run specific tasks: <br>
+- Filter to active listings only, <br>
+`node -e "const t=require('./transforms.js'); console.log(t.filterActiveListings(t.listings));"` <br>
+- Sort them by price in ascending order, <br>
+`node -e "const t=require('./transforms.js'); const a=t.filterActiveListings(t.listings); console.log(t.sortByPriceAscending(a).map(x=>x.price));"` <br>
+- Return a new array of objects containing only id, address, and a formatted price string — e.g. "$450,000", <br>
+`node -e "const t=require('./transforms.js'); const a=t.sortByPriceAscending(t.filterActiveListings(t.listings)); console.log(t.mapListingSummary(a));"` <br>
+- Calculate and return the average price of the active listings (rounded to nearest dollar), <br>
+`node -e "const t=require('./transforms.js'); const a=t.filterActiveListings(t.listings); console.log(t.calculateAveragePrice(a));"`
