@@ -61,6 +61,7 @@ I personally suggest to use POSTMAN as the tool to test all created API endpoint
 if you prefer other, kindly visit `https://github.com/JayMirasol/jr_webdev_tech_test_cloudstaff/blob/8fef882749148b8ad105f353bfd91f27559fee81/task-3-node-rest-api/README.md` for other ways to test it. <br>
 
 How to run: <br>
+
 Open terminal, type `cd task-3-node-rest-api/` <br>
 then `npm install` <br>
 then `npm start` <br>
@@ -73,3 +74,34 @@ The Step by step (POSTMAN) is too long, kindly go to `README.md file on task 3 f
 
 ### Task 4 Async Challenge: Fetch & Aggregate
 
+Go to directory, `cd task-4-async-challenge-fetch-aggregate` <br>
+type `npm install` <br>
+
+How to run: <br>
+
+Test full dataset, `node fetch.js` <br>
+Test bonus flag, `node fetch.js --limit 3` <br>
+Test invalid flag input, `node fetch.js --limit abc` <br>
+
+### Reflection Questions:
+
+1. What was the most challenging part of this test, and how did you approach it? <br>
+
+- The most challenging part for me was handling async behavior correctly while still keeping the script readable and safe. In Task 4, I first made it work, then I checked the requirements one by one and noticed I needed to improve error handling so one failed request would not break everything. My approach was to break the problem into small parts: fetch users, fetch posts concurrently, summarize results, then add validation for the limit flag.
+
+2. If you had another 2 hours, what would you improve or add? <br>
+
+- If I had another 2 hours, I would add automated tests and polish. I would add unit tests for helper functions and maybe integration tests for the API endpoints, so I can prove behavior quickly after changes. I would also improve project consistency by adding better npm scripts, clearer README examples, and maybe small refactors for cleaner structure like separating route logic and utilities.
+
+3. What does "good" Node.js code mean to you? Name one principle you always try to follow.<br>
+
+- For me, good Node.js code means clear, reliable, and easy to maintain by other developers. Since I am still a junior, I focus on code that is simple to follow and handles errors properly instead of trying to be too clever. One principle I always try to follow is fail clearly and handle errors gracefully, because users should get useful responses and the app should not crash from one bad input or one failed request.
+
+### Final Notes
+
+- All tasks are implemented using simple and readable approaches
+- Focus was placed on clarity, correctness, and maintainability
+- No external databases or complex frameworks were used
+
+Best Regards, <br>
+Eduardo
