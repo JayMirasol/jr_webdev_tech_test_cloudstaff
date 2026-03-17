@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Card</title>
+
+    <!-- CSS Styling, layout, and responsive approach -->    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+        .card {
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card p{
+            font-size: 14px;
+        }
+        .avatar {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        .buttons a i{
+            margin-right: 8px;
+        }
+        .buttons a:hover {
+            background: #555;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Structure -->   
+    <div class="card">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHuxl16fX9JmQ/profile-displayphoto-shrink_200_200/B4EZdVafH5HYAc-/0/1749484696997?e=2147483647&v=beta&t=EHwdvQXA3GHd5MdwP_GJTjPkygzdus1wF6Gs2ixUmvU" 
+         class="avatar" />
+        <h2>Eduardo Mirasol Jr</h2>
+        <h4>Junior Web Developer</h4>
+        <p>2 years of hands on experience. Strong background in HTML/CSS, JavaScript, and Node.js</p>
+
+        <div class="buttons">
+            <a href="https://github.com/JayMirasol"> 
+                <i class="fa fa-github"></i> GithHub
+            </a>
+            <a href="http://linkedin.com/in/eduardo-jr-mirasol-441387345/">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="jaymirasol133@gmail.com">
+                <i class="fa fa-envelope"></i> Email
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
