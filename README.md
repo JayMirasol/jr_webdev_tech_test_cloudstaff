@@ -8,9 +8,9 @@ It covers frontend, JavaScript logic, backend API development, and asynchronous 
 
 ### Project Structure
 jr-webdev-tech-test/ 
-│ 
-├── task-1-responsive-profile-card/               # HTML + CSS responsive profile card 
-├── task-2-javaScript-data-transformation/        # JavaScript data transformation 
-├── task-3-node-rest-api/                         # REST API using Node.js + Express 
-├── task-4-async-challenge-fetch-aggregate/       # Async/await + API fetching 
-└── README.md                                
+-> 
+-> task-1-responsive-profile-card/               # HTML + CSS responsive profile card 
+-> task-2-javaScript-data-transformation/        # JavaScript data transformation 
+-> task-3-node-rest-api/                         # REST API using Node.js + Express 
+-> task-4-async-challenge-fetch-aggregate/       # Async/await + API fetching 
+-> README.md                                
