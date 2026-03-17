@@ -58,7 +58,7 @@ Run specific tasks: <br>
 
 ### Task 3 Node.js REST API
 I personally suggest to use POSTMAN as the tool to test all created API endpoints, <br>
-if you prefer other, kindly visit `README.md file on task 3 folder` for other ways to test it. <br>
+if you prefer other, kindly visit `https://github.com/JayMirasol/jr_webdev_tech_test_cloudstaff/blob/8fef882749148b8ad105f353bfd91f27559fee81/task-3-node-rest-api/README.md` for other ways to test it. <br>
 
 How to run: <br>
 Open terminal, type `cd task-3-node-rest-api/` <br>
